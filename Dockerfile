@@ -9,3 +9,5 @@ ENV xpack.security.enabled=true
 
 # Copy the Elasticsearch configuration file containing the default password
 COPY elasticsearch.yml /usr/share/elasticsearch/config/
+
+EXPOSE 9200
