@@ -8,5 +8,6 @@ services:
       - "9200:9200"
     environment:
       - discovery.type=single-node
+      - "xpack.security.enabled=true"  # Set xpack.security.enabled as an environment variable
     volumes:
       - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
